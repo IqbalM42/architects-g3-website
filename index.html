@@ -8,17 +8,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
+    <!-- css link -->
+     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="navbar">
+    <header class="bg_light">
+        <nav class="container">
+            <div class="navbar display_flex">
                 <h3 class="brand">G3 Architects</h3>
+                <ul class="nav_links display_flex">
+                    <li class="nav_item"><a href="" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="" class="nav_link">Contact Us</a></li>
+                    <li class="nav_item"><a href="" class="nav_link">Login</a></li>
+
+                </ul>
             </div>
         </nav>
+        <div class="banner container">
+            <div class="banner_info">
+            <h1 class="banner_title">Brand New <br> Group of Architects</h1>
+            <p class="banner_description dark_3">The professional requirements for architects vary from location to location. An architect's decisions affect public safety, has played a pivotal role in the development of the profession. </p>
+            <button class="btn_primary">Explore More</button>
+            </div>
+            <img src="images/banner.png" alt="Banner image of header section" class="banner_img">
+        </div>
+
     </header>
     <main>
+        <section class="container">
+            <div class="features_section display_flex">
+                <div class="features_team">
+                        <img src="images/team1.png" alt="Features Images">
+
+                        <img src="images/team2.png" alt="Features Images">
+
+                        <img src="images/team3.png" alt="Features Images">
+
+                        <img src="images/team4.png" alt="Features Images">
+                    </div>
+
+                <div class="features_content">
+                    <h2 class="section_title">Quick list of Our Features</h2>
+                    <p class="section_description dark_3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+                    <button class="btn_primary">Explore More</button>
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer>
