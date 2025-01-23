@@ -31,11 +31,20 @@ body{
     align-items: center;
 }
 
+.section_title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: rgba(19, 19, 19, 1);
+    margin: 0;
+}
+
 /* dark 03 */
 .dark_3{
     font-size: 1rem;
-    font-weight: normal;
+    font-weight: 400;
+    line-height: 26px;
     color: rgba(114, 114, 114, 1);
+
 }
 
 
@@ -60,14 +69,13 @@ header{
 }
 
 
-
-
 /* ----- banner related styles ------  */
 .banner_info{
     max-width: 860px;
     margin: 0 auto;
     text-align: center;
     padding-top: 6rem;
+    padding-bottom: 2rem;
 }
 
 .banner_title{
@@ -81,14 +89,16 @@ header{
     margin-bottom: 2rem;;
 }
 
-.banner_img{
+.banner img{
     width: 100%;
-    padding-bottom: 2rem;
+    
 }
 
 /* -------- team and features section -------- */
 .features_section{
     align-items: center;
+    margin-bottom: 130px;
+
 }
 
 .features_team{
@@ -102,18 +112,149 @@ header{
     margin-left: 30px;
 }
 
-.section_title{
+.feature_title{
     margin-bottom: 24px;
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
-.section_description{
-    margin-bottom: 32px;
+.quick{
+    font-weight: 500;
+    color: rgb(104, 100, 100);
 }
+
+.feature{
+    color: rgba(255, 144, 14, 1);
+}
+
+.featire_description{
+    text-align: left;
+    margin-bottom: 32px;
+}   
+
+
+/* ----- start enjoy section ------- */
+
+.enjoy_section{
+    margin-bottom: 130px;
+    align-items: center;
+    gap: 50px;
+}
+
+.enjoy_containt{
+    width: 50%;
+}
+
+.enjoy_containt h2{
+    border-left: 3px solid #FF900E;
+    padding-left: 21px;
+
+}
+
+.enjoy_containt > p{
+    padding-top: 24px;
+    padding-bottom: 30px;
+}
+
+.enjoy_box{
+    display: grid;
+    grid-template-columns: repeat(1);
+    gap: 20px;
+    text-align: left;
+    padding: 30px 42px 30px 30px;
+
+}
+
+.enjoy_sub_title{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(19, 19, 19, 1);
+    margin: 0;
+
+}
+
+.box_containt{
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #dad8d8;
+    padding: 30px 42px 30px 30px;
+}
+
+.enjoy_veiw img{
+    width: 100%;
+}
+
+.enjoy_veiw{
+    position: relative;
+}
+
+.enjoy_btn{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 45px;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    bottom: -104px;
+    left: -50px;
+}
+
+.btn_span{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
+
 
 /* ----- responsive media query -------- */
 @media screen and (max-width: 576px) {
-    .navbar, .nav_links{
+    .navbar, 
+    .nav_links,
+    .features_section,
+    .enjoy_section{
         flex-direction: column;
-        /* gap: 3rem; */
     }
+
+    .banner,
+    .features_section,
+    .banner_info{
+        padding: 0px 20px;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .features_section{
+        gap: 50px;
+
+
+    }
+
+
+    .features_team{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .features_team img{
+        width: 100%;
+    }
+
+    .enjoy_section{
+        padding: 20px;
+        text-align: center;
+    }
+
+    .enjoy_containt{
+        width: 100%;
+    }
+
+    .enjoy_btn{
+        display: none+564;
+    }
+        
 }
