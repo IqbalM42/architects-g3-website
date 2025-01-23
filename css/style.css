@@ -205,6 +205,82 @@ header{
     font-size: 1.5rem;
     font-weight: 500;
 }
+/* ----- facts section start ------ */
+
+.facts_section{
+    margin-bottom: 130px;
+}
+
+.facts_description{
+    width: 40%;
+    margin-top: 24px;
+    margin-bottom: 100px;
+}
+
+.facts_boxes{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    padding: 0px 50px;
+    text-align: center;
+}
+
+.facts_box{
+    padding: 50px;
+    box-shadow: 0px 0px 5px rgb(209, 208, 208);
+
+}
+
+.facts_box img{
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.box_number{
+    font-size: 2.8rem;
+    font-weight: 500;
+    color: rgba(66, 66, 66, 1);
+    margin-bottom: 5px;
+}
+
+.box_win{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgba(66, 66, 66, 1);
+}
+
+/* --- footer section start ------ */
+.sponspor_section{
+    text-align: center;
+}
+.sponspor_containg{
+    max-width: 542px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.sponspor_title{
+    margin-bottom: 24px;
+}
+
+.sponspor{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 135px;
+    margin-bottom: 130px;
+}
+
+.footer_bottom{
+    background-color: #FFF4E7;
+    padding: 40px 0px;
+    text-align: center;
+    margin-bottom: 216px;
+}
+
+marquee{
+    font-size: 24px;
+}
+
 
 
 
@@ -256,5 +332,29 @@ header{
     .enjoy_btn{
         display: none+564;
     }
+
+    .facts_section,
+    .footer_bottom{
+        padding: 0px 20px;
+    }
+
+    .facts_boxes{
+        padding-left: 0;
+        gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .facts_description{
+        width: 100%;
+    }
+
+    .sponspor{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
+        padding: 0px 20px;
+
+    }
+
+
         
 }
